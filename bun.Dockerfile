@@ -1,9 +1,9 @@
 FROM oven/bun:1.2
 
 WORKDIR /app
-COPY package.json .
+COPY . .
 
 RUN bun install
 RUN bun install -g pnpm@latest-10
 
-COPY . .
+# COPY . .
