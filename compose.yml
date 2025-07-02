@@ -1,0 +1,22 @@
+services:
+  # component-registry:
+  #   build:
+  #     context: .
+  #     dockerfile: node.Dockerfile
+  #   volumes:
+  #     - /app/node_modules/
+  #     - .:/app
+  #   ports:
+  #     - '3400:3400'
+  #   command: npm run dev --port 3400
+
+  component-registry:
+    build:
+      context: .
+      dockerfile: bun.Dockerfile
+    volumes:
+      - /app/node_modules/
+      - .:/app
+    ports:
+      - '3400:3400'
+    command: bun run dev --port 3400
