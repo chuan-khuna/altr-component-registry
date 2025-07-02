@@ -25,7 +25,7 @@ npm run reg
 ## Access registry
 
 ```txt
-http://localhost:3000/r/<component-name>.json
+http://localhost:3400/r/<component-name>.json
 ```
 
 ## Install a component from registry
